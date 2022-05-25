@@ -36,9 +36,10 @@ interface Data {
 }
 
 export default function App() {
-  const form = useFormik({
+  const form = useFormik<Data>({
     initialValues: {
       name: '',
+      areItemTitlesMandatory: false,
       items: [
         {
           title: '',
