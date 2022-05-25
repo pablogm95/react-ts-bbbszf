@@ -35,3 +35,11 @@ interface Data {
   }>;
 }
 ```
+
+## Extras
+
+- Add new root property `areItemTitlesMandatory: boolean` and only when this property is true the items title are mandatory
+- Extract the item form manage to its custom component
+- Docker
+- Snapshot test
+- e2e test
