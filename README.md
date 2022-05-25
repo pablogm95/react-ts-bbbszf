@@ -15,17 +15,12 @@ interface Data {
    */
   name: string;
   /**
-   * Configurator if the items title is required
-   */
-  areItemTitlesMandatory: boolean;
-  /**
    * Data items
    * @min 1
    */
   items: Array<{
     /**
      * Item title
-     * Only required when areItemTitlesMandatory is true
      */
     title: string;
     /**
@@ -34,9 +29,9 @@ interface Data {
      */
     color: 'red' | 'green';
     /**
-     * Only at least one required when color is green
+     * Only required when color is green
      */
-    values?: string[];
+    value: string;
   }>;
 }
 ```
